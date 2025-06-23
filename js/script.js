@@ -39,7 +39,7 @@ contactForm.addEventListener('submit', function(e) {
 
 // Animation on Scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.section, .project-card, .skill-category');
+    const elements = document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item');
 
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
