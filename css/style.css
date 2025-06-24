@@ -3,6 +3,8 @@
     --dark: #2d3748;
     --light: #f7fafc;
     --gray: #718096;
+    --primary-dark: #564fd8;
+    --white: #ffffff;
 }
 
 * {
@@ -98,24 +100,43 @@ nav .container {
 }
 
 .hero-text p {
+    font-size: 18px;
     margin-bottom: 30px;
     color: var(--gray);
 }
 
-.btn {
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn, .btn-secondary {
     display: inline-block;
     padding: 12px 30px;
-    background: var(--primary);
-    color: white;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+}
+.btn {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .btn:hover {
+    background-color: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(108, 99, 255, 0.2);
+}
+
+.btn-secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .hero-image img {
@@ -416,7 +437,7 @@ nav .container {
 
 .contact-info {
     display: grid;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contact-info a {
